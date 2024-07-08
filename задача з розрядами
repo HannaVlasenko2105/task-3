@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int p;
+    printf("Введіть ціле число: ");
+    scanf("%d", &p);
+
+    int count = pow(2, p) - (p - 2);
+    printf("Кількість чисел із %d розрядами, де трі однакові цифри не стоять поруч: %d\n", p, count);
+
+    return 0;
+}
